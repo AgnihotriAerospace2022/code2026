@@ -451,7 +451,7 @@ nav img {
 @media (max-width: 768px) {
     /* 1. Exactly 35% of the screen. Creates a perfect 1cm gap for the text sizes! */
     .header {
-        height: 35svh !important; 
+        height: 40svh !important; 
         min-height: 35svh !important;
         padding-bottom: 0 !important;
         overflow: hidden !important;
@@ -2232,4 +2232,3 @@ text-align: left;
     body {
         animation: pageLoadFade 1.5s ease-out forwards;
     }
-
