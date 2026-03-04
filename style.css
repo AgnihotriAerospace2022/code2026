@@ -66,6 +66,28 @@ p strong, p b {
     
     z-index: -1; /* Keep it behind the text */
 }
+
+/*mobile view of image*/
+@media (max-width: 768px) {
+
+    .header {
+        min-height: 100vh;
+        padding-bottom: 40px;   /* space for vision text */
+    }
+
+    /* FIX: Locks the Earth to the bottom of the screen on mobile */
+    .bg-image {
+        object-position: center bottom;
+    }
+
+    .vision-bottom {
+        position: relative;
+        bottom: auto;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+}
 /* DARK OVERLAY */
 .header::after {
     content: "";
@@ -139,6 +161,9 @@ p strong, p b {
     .text-box1 {
         right: 4%;
         max-width: 90%;
+        /* FIX: Pushes text up into the dark space on mobile */
+        top: 25%; 
+        transform: translateY(0); 
     }
 
     .text-box1 h1 {
@@ -1056,6 +1081,12 @@ h1 {
 @media(max-width: 700px) {
     .sub-header h1 {
         font-size: 24px;
+    }
+}
+/* Mobile View */
+@media (max-width: 768px) {
+    .sub-header {
+        height: 50vh;   /* Half screen height */
     }
 }
 .sales-note {
